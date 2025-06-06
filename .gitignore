@@ -13,21 +13,21 @@ weights/
 # ==============================================================================
 # Input Data Files (TIF/Image files can be large)
 # ==============================================================================
-# *.tif
-# *.tiff
-# *.TIF
-# *.TIFF
-# *.jpg
-# *.jpeg
-# *.png
-# *.bmp
-# *.gif
-# *.webp
-# data/
-# images/
-# input/
-# test_images/
-# sample_data/
+*.tif
+*.tiff
+*.TIF
+*.TIFF
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.gif
+*.webp
+data/
+images/
+input/
+test_images/
+sample_data/
 
 # Keep sample/demo images (small ones)
 !demo_*.jpg
