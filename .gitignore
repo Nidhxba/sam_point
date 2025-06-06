@@ -1,0 +1,329 @@
+# SAM Tree Counter - .gitignore
+
+# ==============================================================================
+# SAM Model Checkpoints (Large files - download separately)
+# ==============================================================================
+*.pth
+sam_*.pth
+sam_vit_*.pth
+checkpoints/
+models/
+weights/
+
+# ==============================================================================
+# Input Data Files (TIF/Image files can be large)
+# ==============================================================================
+# *.tif
+# *.tiff
+# *.TIF
+# *.TIFF
+# *.jpg
+# *.jpeg
+# *.png
+# *.bmp
+# *.gif
+# *.webp
+# data/
+# images/
+# input/
+# test_images/
+# sample_data/
+
+# Keep sample/demo images (small ones)
+!demo_*.jpg
+!sample_*.png
+!example_*.tif
+
+# ==============================================================================
+# Output Results
+# ==============================================================================
+results/
+output/
+exports/
+visualizations/
+tree_*.png
+tree_*.jpg
+*_results.json
+*_tree_count.json
+tree_locations.tif
+tree_detection_*.png
+
+# Keep example results for documentation
+!example_results/
+!docs/images/
+
+# ==============================================================================
+# Python
+# ==============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ==============================================================================
+# Jupyter Notebooks
+# ==============================================================================
+.ipynb_checkpoints
+*-checkpoint.ipynb
+*.ipynb
+
+# Keep example notebooks
+!examples/*.ipynb
+!tutorials/*.ipynb
+
+# ==============================================================================
+# IDEs and Editors
+# ==============================================================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ==============================================================================
+# Operating System
+# ==============================================================================
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==============================================================================
+# Temporary and Cache Files
+# ==============================================================================
+*.tmp
+*.temp
+*.log
+*.cache
+temp/
+tmp/
+cache/
+
+# ==============================================================================
+# Configuration Files (keep templates)
+# ==============================================================================
+config.py
+settings.py
+local_settings.py
+.env.local
+.env.production
+
+# Keep configuration templates
+!config_template.py
+!settings_example.py
+!.env.example
+
+# ==============================================================================
+# Documentation Build
+# ==============================================================================
+docs/_build/
+docs/build/
+site/
+
+# ==============================================================================
+# Database
+# ==============================================================================
+*.db
+*.sqlite3
+*.sqlite
+
+# ==============================================================================
+# Geospatial specific
+# ==============================================================================
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.qpj
+
+# Keep small example shapefiles
+!examples/*.shp
+!examples/*.shx
+!examples/*.dbf
+
+# ==============================================================================
+# Machine Learning / AI
+# ==============================================================================
+# Model artifacts
+*.pkl
+*.pickle
+*.model
+*.h5
+*.hdf5
+*.onnx
+
+# Training logs
+logs/
+runs/
+wandb/
+tensorboard/
+mlruns/
+
+# ==============================================================================
+# Package managers
+# ==============================================================================
+# Conda
+.conda/
+
+# Poetry
+poetry.lock
+
+# Pipenv
+Pipfile.lock
+
+# ==============================================================================
+# Project Specific
+# ==============================================================================
+# Large processing files
+processing/
+tiles/
+intermediate/
+
+# Benchmark data
+benchmarks/
+performance/
+
+# User-specific paths
+user_data/
+personal/
+private/
+
+# ==============================================================================
+# Keep Important Files
+# ==============================================================================
+# Always keep these files
+!README.md
+!requirements.txt
+!setup.py
+!pyproject.toml
+!environment.yml
+!docker-compose.yml
+!Dockerfile
+!LICENSE
+!CHANGELOG.md
+!docs/
+!examples/README.md
+!tests/
+
+# Keep small test files
+!tests/test_*.py
+!tests/data/small_*.tif
